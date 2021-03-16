@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IwC-Ln-dYb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Raleway-Bold.ttf">
+            <string>Raleway-Bold</string>
+        </array>
+        <array key="SF-Mono-Medium.otf">
+            <string>SFMono-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Movie Search View Controller-->
+        <scene sceneID="mPw-Jw-WVY">
+            <objects>
+                <viewController storyboardIdentifier="MovieSearchViewController" id="IwC-Ln-dYb" customClass="MovieSearchViewController" customModule="Movieflex" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uIk-UP-hxQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fue-eF-CE9">
+                                <rect key="frame" x="140.5" y="68" width="133" height="28"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your favorite movies that you'd like to watch and save them for future ;)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xr0-5c-HAf">
+                                <rect key="frame" x="24" y="116" width="366" height="35"/>
+                                <fontDescription key="fontDescription" name="SFMono-Medium" family="SF Mono" pointSize="14.5"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="Search for movies" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGb-YD-fQU">
+                                <rect key="frame" x="24" y="179" width="366" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="H8M-5g-uXV"/>
+                                </constraints>
+                                <color key="tintColor" systemColor="labelColor"/>
+                                <color key="barTintColor" systemColor="labelColor"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="UlU-gi-a2q">
+                                <rect key="frame" x="0.0" y="245" width="414" height="651"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UJL-Io-Xg6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FGb-YD-fQU" secondAttribute="trailing" constant="24" id="1be-gu-5yI"/>
+                            <constraint firstItem="FGb-YD-fQU" firstAttribute="leading" secondItem="UJL-Io-Xg6" secondAttribute="leading" constant="24" id="2hL-qc-V8u"/>
+                            <constraint firstItem="fue-eF-CE9" firstAttribute="top" secondItem="UJL-Io-Xg6" secondAttribute="top" constant="24" id="4ls-wG-qis"/>
+                            <constraint firstItem="UJL-Io-Xg6" firstAttribute="trailing" secondItem="Xr0-5c-HAf" secondAttribute="trailing" constant="24" id="7bh-4s-Rjh"/>
+                            <constraint firstItem="UlU-gi-a2q" firstAttribute="leading" secondItem="UJL-Io-Xg6" secondAttribute="leading" id="7nt-XM-Q34"/>
+                            <constraint firstAttribute="bottom" secondItem="UlU-gi-a2q" secondAttribute="bottom" id="A7m-hm-hEQ"/>
+                            <constraint firstItem="fue-eF-CE9" firstAttribute="centerX" secondItem="UJL-Io-Xg6" secondAttribute="centerX" id="DaP-Eb-lzK"/>
+                            <constraint firstItem="UJL-Io-Xg6" firstAttribute="trailing" secondItem="UlU-gi-a2q" secondAttribute="trailing" id="Icr-xl-uBq"/>
+                            <constraint firstItem="UlU-gi-a2q" firstAttribute="top" secondItem="FGb-YD-fQU" secondAttribute="bottom" constant="24" id="cpe-Y1-ewd"/>
+                            <constraint firstItem="Xr0-5c-HAf" firstAttribute="leading" secondItem="UJL-Io-Xg6" secondAttribute="leading" constant="24" id="dCk-aU-YIY"/>
+                            <constraint firstItem="FGb-YD-fQU" firstAttribute="top" secondItem="Xr0-5c-HAf" secondAttribute="bottom" constant="28" id="l46-n2-UKo"/>
+                            <constraint firstItem="Xr0-5c-HAf" firstAttribute="top" secondItem="fue-eF-CE9" secondAttribute="bottom" constant="20" id="yaP-AB-y4y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="FGb-YD-fQU" id="Et7-aJ-aS1"/>
+                        <outlet property="searchTableView" destination="UlU-gi-a2q" id="rd8-EA-RvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKH-mh-UXk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1846" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
