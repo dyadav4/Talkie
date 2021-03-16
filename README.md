@@ -1,6 +1,6 @@
 # Talkie
 
-I decided to create a UIKit based iOS app with MVVM architecture with hopes that it'll help out iOS developers in learning MVVM, and how to use it to maintain a clean and simple architecture.
+I decided to create a UIKit based iOS app with MVVM architecture with hopes that it'll help me in learning MVVM, and how to use it to maintain a clean and simple architecture.
 Using MVVM in an iOS project certainly improves things by decoupling modules, and I love using it in my projects. 
 
 ## Introduction
