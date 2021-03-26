@@ -16,4 +16,8 @@ The end goal of the usage of any design, architectural patterns is usually the s
 ## Languages / Frameworks Used
 * Swift 5
 * UIKit
-The project is built supporting iOS 13.6, you can change the deployment target to run it on previous iOS versions.
+The project is built supporting iOS 13.6.
+
+<h1>Next feature to Add</h1>
+<p>Need to optimize the app</p>
+<p>add a video framework so the users can play the trailers</p>
